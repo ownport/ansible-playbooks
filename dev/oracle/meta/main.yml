@@ -1,0 +1,13 @@
+---
+galaxy_info:
+  author: "Andrey Usov"
+  description: Ansible role for installation Oracle Java 
+  licence: Apache 2
+  min_ansible_version: 1.9
+
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+
+  dependecies: []

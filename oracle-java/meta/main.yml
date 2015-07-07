@@ -1,5 +1,7 @@
 ---
 galaxy_info:
+  name: oracle-java
+  version: 1.0.0
   author: "Andrey Usov"
   description: Ansible role for installation Oracle Java 
   licence: Apache 2

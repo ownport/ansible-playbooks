@@ -1,6 +1,6 @@
-# ansible-playbooks
+# ansible-roles
 
-The collection of ansible playbooks
+The collection of ansible roles
 
 ## Development
 

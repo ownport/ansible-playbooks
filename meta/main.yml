@@ -1,0 +1,11 @@
+---
+galaxy_info:
+  author: "Andrey Usov"
+  description: Ansible roles 
+  licence: Apache 2
+  min_ansible_version: 1.4
+
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty

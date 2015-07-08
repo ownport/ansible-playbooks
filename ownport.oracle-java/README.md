@@ -11,7 +11,7 @@
     - vars/java-versions.yml
 
   tasks:
-    - include: tasks/install-java.yml
+    - include: tasks/main.yml
       vars:
         java_url: "{{ java_vers.server_jre_7u75.url }}"
         java_archive: "{{ java_vers.server_jre_7u75.url|basename }}"

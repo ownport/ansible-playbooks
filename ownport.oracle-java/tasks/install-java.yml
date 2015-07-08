@@ -1,0 +1,18 @@
+---
+- name: Download Java
+  command: "wget -q -c --no-check-certificate --no-cookies --header 'Cookie: oraclelicense=accept-securebackup-cookie' {{ java_url }} -O /tmp/{{java_archive}}"
+
+- name: Check if installation directory exists
+  file: state=directory dest={{ java_path }}
+
+- name: Unpack Java tarball
+  unarchive: 
+    src: "/tmp/{{ java_archive }}"
+    dest: "{{ java_path }}"
+
+- name: Setting environment
+  command: echo "NOT DEFINED YET"
+
+- name: Clean up 
+  file: state=absent dest=/tmp/{{java_archive}}
+

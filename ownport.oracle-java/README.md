@@ -1,5 +1,23 @@
 # Oracle Java
 
+## Playbook example
+
+```yaml
+---
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  vars_files:
+    - vars/java-versions.yml
+
+  tasks:
+    - include: tasks/install-java.yml
+      vars:
+        java_url: "{{ java_vers.server_jre_7u75.url }}"
+        java_archive: "{{ java_vers.server_jre_7u75.url|basename }}"
+        java_path: /tmp
+```
+
 ## Links
 
 - [andershedstrom/playbook-install-jdk8.yml](https://gist.github.com/andershedstrom/7c7d0bb5b9450c54a907), Ansible playbook for installing Oracle Java 8 on CentOS
